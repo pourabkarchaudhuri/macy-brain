@@ -5,6 +5,7 @@ var bodyParser = require('body-parser')
 var deasync = require('deasync');
 var processor = require('./compute')
 
+app = express();
 // exports.handler = (event, context, callback) => {
 
 var port = process.env.PORT||3000;

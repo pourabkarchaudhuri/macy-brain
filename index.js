@@ -17,7 +17,6 @@ app.get("/", function(req,res){
     res.send("Macy Server Online!")
   })
 
-})
 app.post("/brain", function(req,res){
   console.log("Event : " + JSON.stringify(req.body));
   processor.Process(req.body, function(response){

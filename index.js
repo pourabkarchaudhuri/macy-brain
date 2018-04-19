@@ -12,7 +12,12 @@ var port = process.env.PORT||3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
+app.get("/", function(req,res){
 
+    res.send("Macy Server Online!")
+  })
+
+})
 app.post("/brain", function(req,res){
   console.log("Event : " + JSON.stringify(req.body));
   processor.Process(req.body, function(response){

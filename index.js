@@ -3,7 +3,7 @@ var searchAPI = require('./search');
 var express = require('express')
 var bodyParser = require('body-parser')
 var deasync = require('deasync');
-var processor = require('compute')
+var processor = require('./compute')
 
 // exports.handler = (event, context, callback) => {
 

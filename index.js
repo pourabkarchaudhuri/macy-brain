@@ -19,7 +19,7 @@ app.get("/", function(req,res){
   })
 
 app.post("/brain", function(req,res){
-  console.log("Event : " + JSON.parse(req).body);
+  console.log("Event : " + req.body);
   processor.Process(req.body, function(response){
     res.send(response)
   })

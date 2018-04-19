@@ -1,0 +1,22 @@
+{
+  "name": "macylambdabrain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start" : "node index.js"
+  },
+  "keywords": [
+    "MAcy"
+  ],
+  "author": "Pourab Karchaudhuri",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "deasync": "^0.1.12",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}

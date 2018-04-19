@@ -6,7 +6,7 @@ module.exports = {
   "Process": function(body, callback){
     //Do something
     let nluQueryClassifier = deasync(function(callback){
-                   dialogflowAPI.callDialogflow(event, callback);
+                   dialogflowAPI.callDialogflow(body, callback);
                  })();
      callback(nluQueryClassifier)
   }
